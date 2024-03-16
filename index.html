@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Renzo Valentin</title>
+</head>
+
+<body>
+    <!-- HOME 
+    ============================ -->
+    <section id="home" class="home">
+        <header>
+            <div class="menu" onclick="showMenu()">
+                <span>MENU</span>
+                <div class="barras">
+                    <div class="linea efecto"></div>
+                    <div class="linea"></div>
+                    <div class="linea efecto"></div>
+                </div>
+            </div>
+            <!-- Menu desplegable -->
+            <nav id="nav" class="nav-menu">
+                <a href="#home" onclick="closeMenu()">Home</a>
+                <a href="#experince" onclick="closeMenu()">Experience</a>
+                <a href="#projects" onclick="closeMenu()">Projects</a>
+                <a href="#about" onclick="closeMenu()">About me</a>
+                <button onclick="closeMenu()"><i class="fa-solid fa-xmark"></i></button>
+            </nav>
+        </header>
+        <div class="contenido">
+            <h1>Renzo <br>Valentin</h1>
+            <p class="descripcion">no just a developer but a problem solver</p>
+            <div class="social">
+                <a href="https://github.com/renzofbn"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/renzofbn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:renzofbn@tutanota.com"><i class="fa-solid fa-at"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- End Home -->
+
+    <!--  Experience
+    ============================ -->
+    <section class="work-experience section-odd" id="experince">
+        <h2 class="section-title negro">Experience</h2>
+        <ul class="timeline">
+            <li class="timeline-event">
+                <label class="timeline-event-icon"></label>
+                <div class="timeline-event-copy">
+                    <p class="timeline-event-thumbnail">July 2023 - January 2024</p>
+                    <h3>Backend Developer</h3>
+                    <h4>a StartUp</h4>
+                    <p class="job-descr"><strong>The goal</strong><br>
+                        My first startup, I developed an app to create trainable WhatsApp bots according to customer needs based on
+                        documents and prompts using the LLM, GPT-4.</p>
+                </div>
+            </li>
+            <li class="timeline-event">
+                <label class="timeline-event-icon"></label>
+                <div class="timeline-event-copy">
+                    <p class="timeline-event-thumbnail">August 2022 - June 2023</p>
+                    <h3>Python Developer</h3>
+                    <h4>Develogers</h4>
+                    <p class="job-descr">
+                        <strong>Responsibilities</strong><br />
+                        In my role, I focused on building and maintaining Odoo apps. I used Python for backend work and JavaScript plus XML for the frontend. I handled everything from adding new features to fixing bugs. <br /><br />
+                        <strong>Key Achievement</strong><br />
+                        I led the development of a new software tool to make testing and developing projects easier. Using modern technologies like Docker and Kubernetes, it automates testing servers and simulates how clients access them. This makes the whole process more efficient and reliable.
+                    </p>
+
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!-- End Experience -->
+
+    <!-- Projects
+    ============================ -->
+    <section class="projects" id="projects">
+        <h2 class="section-title negro load-hidden">Projects</h2>
+        <div class="projects-wrapper">
+            <div class="fila">
+                <div class="col">
+                    <a href="https://github.com/renzofbn/hangpy" target="_blank">
+                        <div class="info">
+                            <h3 class="titulo-proyecto">Hangpy</h3>
+                            <p class="descripcion-proyecto">a hangman game, CLI</p>
+                        </div>
+                        <img src="img/snake.jpg" alt="" class="img-proyecto">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://github.com/renzofbn/cheeseBot" target="_blank">
+                        <div class="info">
+                            <h3 class="titulo-proyecto">CheeseBot</h3>
+                            <p class="descripcion-proyecto">a bot for your discord server</p>
+                        </div>
+                        <img src="img/cheese.jpg" alt="" class="img-proyecto">
+                    </a>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <a href="https://github.com/renzofbn/21" target="_blank">
+                        <div class="info">
+                            <h3 class="titulo-proyecto">21</h3>
+                            <p class="descripcion-proyecto">a blackjack game</p>
+                        </div>
+                        <img src="img/cards.jpg" alt="" class="img-proyecto">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Projects -->
+
+    <!--  About
+    ============================ -->
+    <section class="about-me section-odd " id="about">
+        <h2 class="section-title negro">About me</h2>
+        <h3>Hello friend <span class="linea"></span></h3>
+        <h4 class="descripcion">
+            I'm, Renzo a <a><span class="efecto"></span>Software Developer</a> , specialist in <a><span
+                    class="efecto"></span>BackEnd</a>
+            <a><span class="efecto"></span>Development</a> ,
+            not only building software but <a><span class="efecto"></span>solutions</a> with effectiveness and
+            simplicity. Let's build cool stuff
+            <a href="mailto:renzofbn@tutanota.com"><span class="efecto"></span>together</a> .
+        </h4>
+    </section>
+    <!-- End About -->
+    <script src="app.js"></script>
+</body>
+
+</html>
